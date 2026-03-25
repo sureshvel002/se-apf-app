@@ -7,7 +7,7 @@ const prompts = [
   {
     step: 0,
     label: "Learn",
-    text: `Here is a deep research report for the topic we are going to discuss today. No action required. Use this report as additional context for your responses apart from web search and other resources.`,
+    text: `Here is the TCS Denmark Customer Intelligence Report for the account we are going to discuss today. No action required. Use this report as additional context for your responses apart from web search and other resources.`,
   },
   {
     step: 1,

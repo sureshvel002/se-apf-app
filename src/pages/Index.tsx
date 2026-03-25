@@ -4,25 +4,25 @@ import { FileText, MessageSquare, Images, ArrowRight } from "lucide-react";
 const sections = [
   {
     title: "Challenge Cards",
-    description: "Explore high-priority APF challenges — from finance modernization to integration reliability — mapped to agentic AI opportunities.",
+    description: "Explore customer-specific challenges across six Danish accounts — mapped to AI-driven opportunities for TCS delivery.",
     icon: Images,
     path: "/challenge-cards",
     gradient: "from-primary to-accent",
   },
   {
     title: "Deep Research Report",
-    description: "Read the consolidated Siemens Energy APF research briefing — operating context, platform landscape, and strategic AI alignment.",
+    description: "Read the TCS Denmark Customer Intelligence Report — six account briefs and cross-industry synthesis from 2024–2025 public sources.",
     icon: FileText,
     path: "/deep-research",
     gradient: "from-accent to-primary",
   },
-  {
-    title: "Prompts",
-    description: "Double Diamond framework prompts tailored for Siemens Energy APF. Copy and use with your preferred AI assistant.",
-    icon: MessageSquare,
-    path: "/prompts",
-    gradient: "from-primary to-accent",
-  },
+  // {
+  //   title: "Prompts",
+  //   description: "Double Diamond framework prompts tailored for TCS Denmark accounts. Copy and use with your preferred AI assistant.",
+  //   icon: MessageSquare,
+  //   path: "/prompts",
+  //   gradient: "from-primary to-accent",
+  // },
 ];
 
 const Index = () => {
@@ -33,22 +33,22 @@ const Index = () => {
       <div className="max-w-6xl w-full animate-fade-in">
         <div className="text-center mb-12">
           <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-3">
-            Siemens Energy &bull; Application Platforms Functions (APF)
+            TCS Denmark &bull; Customer Intelligence
           </p>
           <h1 className="text-4xl md:text-5xl font-bold font-display text-foreground mb-4">
             AI Immersion Day
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Resources for the rapid build immersion session — research, frameworks, and prompts to accelerate agentic AI adoption across APF.
+            Resources for the rapid build immersion session — customer intelligence, frameworks, and prompts to accelerate AI adoption across TCS Denmark accounts.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {sections.map((section) => (
             <button
               key={section.path}
               onClick={() => navigate(section.path)}
-              className="group relative overflow-hidden rounded-xl bg-card border border-border p-6 text-left transition-all hover:shadow-lg hover:border-primary/30 hover:-translate-y-1"
+              className="group relative overflow-hidden rounded-xl bg-card border border-border p-6 text-left transition-all hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 w-full md:w-[calc(33.333%-1rem)] max-w-sm"
             >
               <div className={`absolute top-0 left-0 h-1 w-full bg-gradient-to-r ${section.gradient}`} />
               <div className="flex flex-col gap-4">
