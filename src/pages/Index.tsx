@@ -16,13 +16,13 @@ const sections = [
     path: "/deep-research",
     gradient: "from-accent to-primary",
   },
-  // {
-  //   title: "Prompts",
-  //   description: "Double Diamond framework prompts tailored for TCS Denmark accounts. Copy and use with your preferred AI assistant.",
-  //   icon: MessageSquare,
-  //   path: "/prompts",
-  //   gradient: "from-primary to-accent",
-  // },
+  {
+    title: "Prompts",
+    description: "Double Diamond framework prompts tailored for TCS Denmark accounts. Copy and use with your preferred AI assistant.",
+    icon: MessageSquare,
+    path: "/prompts",
+    gradient: "from-primary to-accent",
+  },
 ];
 
 const Index = () => {
